@@ -18,29 +18,12 @@
 	$ git config --global user.email "hap0p9y@nate.com"
 	
  * git 초기화 
-	$ git init
-<!--	
-hint: Using 'master' as the name for the initial branch. This default branch name
-hint: is subject to change. To configure the initial branch name to use in all
-hint: of your new repositories, which will suppress this warning, call:
-hint:
-hint:   git config --global init.defaultBranch <name>
-hint:
-hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
-hint: 'development'. The just-created branch can be renamed via this command:
-hint:
-hint:   git branch -m <name>
-Initialized empty Git repository in C:/Users/hap0p/Desktop/git_rep/.git/
--->
+	+ $ git init
  * git_원격지 와 연결 - repository 등록 후 code 탭에서 확인 가능
-	$ git remote add origin https://github.com/kikuen/test_git.git
+	+ $ git remote add origin https://github.com/kikuen/test_git.git
 	
  * 원격지 연결 후 정보 확인
-	$ git remote -v
-<!--	
-origin  https://github.com/kikuen/test_git.git (fetch)
-origin  https://github.com/kikuen/test_git.git (push)
--->
+	+ $ git remote -v
 
 ## 명령어 
 
@@ -72,27 +55,27 @@ branch-분점 - 나뉘다
 
 
  * README.md 파일 생성
-$ echo "# git test reload README.md" >> README.md
++ $ echo "# git test reload README.md" >> README.md
 
  * 상태 확인
-$ git status
++ $ git status
 
 
  * 반영 할 내용을 로컬 무대에 올림
-$ git add README.md
++ $ git add README.md
 
  * 적용 시킬 내용 확인
-$ git status
++ $ git status
 
  * 로컬에 적용
-$ git commit -m "first commit"
++ $ git commit -m "first commit"
 
  * 원격지에 적용
-$ git push -u origin master
++ $ git push -u origin master
 
  * github repository로 가서 상태 확인
 
- ** 파일 정보 직접 변경 후 반복
+ + 파일 정보 직접 변경 후 반복
 
 
 
