@@ -5,11 +5,8 @@
 
  https://git-scm.com/downloads 에서 다운로드 및 설치
  
- ### 저장 할려는 위치에서 git_bash 호출 하거나 cd 명령어로 이동
+ ### 저장 할려는 위치에서 git_bash 호출 하거나 cd 명령어로 이동 또는 마우스 우클릭 Git Bash Here
  
- <!--
-  C:\Users\hap0p\Downloads\PortableGit\git-bash.exe
- -->
  * git_hub Page 에서 등록 한 repositories 이름 등록
 	+ $ git config --global user.name "test_git"
 	
@@ -57,23 +54,22 @@
  ## 실습
 
  * README.md 파일 생성
- + $ echo "# git test reload README.md" >> README.md
+ 	+ $ echo "# git test reload README.md" >> README.md
 
  * 상태 확인
- + $ git status
-
+	 + $ git status
 
  * 반영 할 내용을 로컬 무대에 올림
- + $ git add README.md
+ 	+ $ git add README.md
 
  * 적용 시킬 내용 확인
- + $ git status
+	 + $ git status
 
  * 로컬에 적용
- + $ git commit -m "first commit"
+ 	+ $ git commit -m "first commit"
 
  * 원격지에 적용
- + $ git push -u origin master
+ 	+ $ git push -u origin master
 
  * github repository로 가서 상태 확인
 
