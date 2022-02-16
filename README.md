@@ -5,7 +5,7 @@
 
  https://git-scm.com/downloads 에서 다운로드 및 설치
  
- ### 저장 할려는 위치에서 git_bash 호출 하거나 cd 명령어로 이동 또는 마우스 우클릭 Git Bash Here
+ ### 저장 할려는 위치에서 git-bash 호출 하거나 cd 명령어로 이동 또는 마우스 우클릭 Git Bash Here
  
  * git_hub Page 에서 등록 한 repositories 이름 등록
 	+ $ git config --global user.name "test_git"
