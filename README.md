@@ -50,8 +50,8 @@ git push [원격저장소 이름][원격저장소 브런치 이름]
 * git push origin master
 
 
-branch-분점 - 나뉘다
-로컬 저장소의 변경사항을 원격 저장소(origin)의 브런치(master)에 반영
+* branch-분점 - 나뉘다
++ 로컬 저장소의 변경사항을 원격 저장소(origin)의 브런치(master)에 반영
 
 
 ## 실습
@@ -64,16 +64,16 @@ branch-분점 - 나뉘다
 
 
  * 반영 할 내용을 로컬 무대에 올림
-$ git add README.md
++ $ git add README.md
 
  * 적용 시킬 내용 확인
-$ git status
++ $ git status
 
  * 로컬에 적용
-$ git commit -m "first commit"
++ $ git commit -m "first commit"
 
  * 원격지에 적용
-$ git push -u origin master
++ $ git push -u origin master
 
  * github repository로 가서 상태 확인
 
