@@ -1,4 +1,3 @@
-
 # test_git
 테스트 하기 위해 생성
 
@@ -12,18 +11,19 @@
   C:\Users\hap0p\Downloads\PortableGit\git-bash.exe
  -->
  * git_hub Page 에서 등록 한 repositories 이름 등록
-	$ git config --global user.name "test_git"
+	+ $ git config --global user.name "test_git"
 	
  * git_hub Page 에서 등록 한 사용자아이디(이메일) 등록
-	$ git config --global user.email "hap0p9y@nate.com"
+	+ $ git config --global user.email "hap0p9y@nate.com"
 	
  * git 초기화 
 	+ $ git init
+	
  * git_원격지 와 연결 - repository 등록 후 code 탭에서 확인 가능
 	+ $ git remote add origin https://github.com/kikuen/test_git.git
 	
  * 원격지 연결 후 정보 확인
-	+ $ git remote -v
+	$ git remote -v
 
 ## 명령어 
 
@@ -31,28 +31,30 @@
 저장소에 파일 추가(staged:무대에 오르다) - 무대에 올리다.
 
 (현재 디렉토리 안에 모든 파일 추가) 
-git add .   
+* git add .   
 
 (특정 파일만 추가)
-git add [경로/파일이름]
+* git add [경로/파일이름]
 
 
 ### commit
 무대에 올린(staging한) 파일 커밋
 커밋시 메세지 추가(추가된 파일에 대해 타인이 알아볼 수 있도록 전달되는 간략한 메세지)
 
-git commit -m '커밋메세지'
+* git commit -m '커밋메세지'
 
 
 ### push
 원격 저장소로 push
 git push [원격저장소 이름][원격저장소 브런치 이름]
-git push origin master
+* git push origin master
 
 
 branch-분점 - 나뉘다
 로컬 저장소의 변경사항을 원격 저장소(origin)의 브런치(master)에 반영
 
+
+## 실습
 
  * README.md 파일 생성
 + $ echo "# git test reload README.md" >> README.md
@@ -62,20 +64,20 @@ branch-분점 - 나뉘다
 
 
  * 반영 할 내용을 로컬 무대에 올림
-+ $ git add README.md
+$ git add README.md
 
  * 적용 시킬 내용 확인
-+ $ git status
+$ git status
 
  * 로컬에 적용
-+ $ git commit -m "first commit"
+$ git commit -m "first commit"
 
  * 원격지에 적용
-+ $ git push -u origin master
+$ git push -u origin master
 
  * github repository로 가서 상태 확인
 
- + 파일 정보 직접 변경 후 반복
+ ** 파일 정보 직접 변경 후 반복
 
 
 
