@@ -82,6 +82,7 @@
 		- $ cat test.txt
 	+ 파일의 앞부분 head ( 기본 10줄 )
 		- $ head test.txt
+		- $ head -n 5 test.txt 
 	+ 파일의 뒷부분 tail
 		- $ tail test.txt
 	
