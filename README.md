@@ -37,7 +37,7 @@
 	+ $ git remote add origin https://github.com/kikuen/test_git.git
 	
  * 원격지 연결 후 정보 확인
-	$ git remote -v
+	+ $ git remote -v
 
  ## 명령어 
 
