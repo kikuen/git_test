@@ -7,15 +7,30 @@
 
  * Git Bash란 컴퓨터 OS와 상관없이 리눅스 베이스 터미널용 Git을 말한다.
  
+ ### https://git-scm.com/downloads 에서 다운로드 및 설치
+ 
+ ### 특정 위치에서 git terminal 호출 
+ 
+ * 저장 할려는 위치에서 git-bash 호출 하거나 cd 명령어로 이동 또는 마우스 우클릭 Git Bash Here
+
+
  ### Git Bash에서 사용되는 Linux-base 기본 명령어 
  
  * 파일 브라우징
 	+ 파일 목록 ls :  (list) -l(자세히) -a(숨김파일까지)
+	 	- ls
+	 	- ls -l
+	 	- ls -a
+	 	- ls -l -a
 	+ 디렉토리(폴더) 이동 cd :  (change directory)
+		- cd ../
+		- cd test_git
+		- cd ./test_git
 	+ 현재 작업중인 디렉토리 pwd :  (print working directory)
+		- pwd
 	
  *  권한 확인
-	ls -l
+	+ ls -l
 	
 	+ -|rw-|r--|r-- root(소유자) root(소유그룹) test(파일이름)
 	+ 1 234 567 890
@@ -30,24 +45,49 @@
 		- ex) 644 권한
 		- ex) 최고권한 = 777
 
-
  * 파일 조작
 	+ 파일 생성 touch 
+		- $ touch test.txt
 	+ 파일 복사 cp (copy)
+		- $ cp test.txt ../copy.txt
+		- $ ls -l
+		- $ cd ../
 	+ 파일 이동 mv (move)
+		- $ mv copy.txt ./git_test
+		- $ ls -l
 	+ 파일 삭제 rm (remove)
+		- $ cd ./git_test
+		- $ rm copy.txt
+		- $ ls -l
+
+* 파일 내용 조회
+	+ 전체 내용 출력 cat ( 터미널 창으로 출력 )
+	+ 파일의 앞부분 head ( 기본 10줄 )
+	+ 파일의 뒷부분 tail
+	+ 페이지 단위로 출력 more, less
+	
+ * 파일 편집기
+	+ 파일 편집 호출 **vi** **파일이름**
+	+ 명령 모드 / 입력 모드 두가지 모드로 진행
+	+ vi 진입 - 명령 모드 
+	+ 입력 모드 진입 : a, i  ( --끼워넣기-- )
+	+ 명령 모드 진입 : esc
+	+ 저장하고 종료 : : wq
+	+ 저장하지 않고 종료 : q
+		- 편집 사항이 있을 경우 - :q!
+	+ 명령 모드
+		- 행 번호 표시 : :set number
+	  	- 한 줄 삭제 : dd
+		- 한 줄 복사 : yy
+		- 붙여넣기 : p
+		
+-----------------------------------------------------------------------------------------
+
+## 기본 명령어 실습
+	+ $ 
 
 
-
-
- ### https://git-scm.com/downloads 에서 다운로드 및 설치
- 
- ### 특정 위치에서 git terminal 호출 
- 
- * 저장 할려는 위치에서 git-bash 호출 하거나 cd 명령어로 이동 또는 마우스 우클릭 Git Bash Here
-
-
- ### 명령 실행을 위한 준비
+ ### git 원격 명령 실행을 위한 준비
  
  * git_hub Page 에서 등록 한 repositories 이름 등록
 	+ $ git config --global user.name "test_git"
