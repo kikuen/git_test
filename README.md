@@ -10,10 +10,20 @@
  ### Git Bash에서 사용되는 Linux-base 기본 명령어 
  
  * 파일 브라우징
-	+ 파일 목록 ls(list) :  -l(자세히) -a(숨김파일까지)
-	+ 디렉토리(폴더) 이동 cd :  ( change directory )
-	+ 현재 작업중인 디렉토리 pwd :  ( print working directory)
-
+	+ 파일 목록 ls :  (list) -l(자세히) -a(숨김파일까지)
+	+ 디렉토리(폴더) 이동 cd :  (change directory)
+	+ 현재 작업중인 디렉토리 pwd :  (print working directory)
+	
+ *  권한 확인
+	ls -l
+	
+	- -|rw-|r--|r-- root(소유자) root(소유그룹) test(파일이름)
+	- 1 234 567 890
+	
+	- 1 - 파일의 형식 ( l: link, d: directory, - : file ) 
+	- 234 - 소유자의 권한
+	- 567 - 소유그룹의 권한
+	- 890 - 나머지 사용자들의 권한
 
  ### https://git-scm.com/downloads 에서 다운로드 및 설치
  
