@@ -17,13 +17,28 @@
  *  권한 확인
 	ls -l
 	
-	- -|rw-|r--|r-- root(소유자) root(소유그룹) test(파일이름)
-	- 1 234 567 890
+	+ -|rw-|r--|r-- root(소유자) root(소유그룹) test(파일이름)
+	+ 1 234 567 890
 	
-	- 1 - 파일의 형식 ( l: link, d: directory, - : file ) 
-	- 234 - 소유자의 권한
-	- 567 - 소유그룹의 권한
-	- 890 - 나머지 사용자들의 권한
+		- 1 - 파일의 형식 ( l: link, d: directory, - : file ) 
+		- 234 - 소유자의 권한
+		- 567 - 소유그룹의 권한
+		- 890 - 나머지 사용자들의 권한
+		
+	+ 3가지 권한 - r(read 읽기), w(write 쓰기), x(execute 실행)
+		- 숫자로 권한 표시 r: 4, w: 2, x: 1
+		- ex) 644 권한
+		- ex) 최고권한 = 777
+
+
+ * 파일 조작
+	+ 파일 생성 touch 
+	+ 파일 복사 cp (copy)
+	+ 파일 이동 mv (move)
+	+ 파일 삭제 rm (remove)
+
+
+
 
  ### https://git-scm.com/downloads 에서 다운로드 및 설치
  
