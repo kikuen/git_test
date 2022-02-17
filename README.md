@@ -15,7 +15,7 @@
 	+ 현재 작업중인 디렉토리 pwd ( print working directory)
 
 
- https://git-scm.com/downloads 에서 다운로드 및 설치
+ ### https://git-scm.com/downloads 에서 다운로드 및 설치
  
  ### 특정 위치에서 git terminal 호출 
  
