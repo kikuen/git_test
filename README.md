@@ -19,7 +19,8 @@
 
 <br>
 
-<img src="https://kikuen.github.io/pana/img/bash.png" width="400"/>
+
+![](https://kikuen.github.io/pana/img/bash.png)
 
 <br>
 
