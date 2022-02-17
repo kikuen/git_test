@@ -10,9 +10,9 @@
  ### Git Bash에서 사용되는 Linux-base 기본 명령어 
  
  * 파일 브라우징
-	+ 파일 목록 ls ( list ) -l(자세히) -a(숨김파일까지)
-	+ 디렉토리(폴더) 이동 cd ( change directory )
-	+ 현재 작업중인 디렉토리 pwd ( print working directory)
+	+ 파일 목록 ls : \t( list ) -l(자세히) -a(숨김파일까지)
+	+ 디렉토리(폴더) 이동 : \t cd ( change directory )
+	+ 현재 작업중인 디렉토리 : \t pwd ( print working directory)
 
 
  ### https://git-scm.com/downloads 에서 다운로드 및 설치
