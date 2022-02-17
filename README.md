@@ -28,7 +28,11 @@
 		- cd ./test_git
 	+ 현재 작업중인 디렉토리 pwd :  (print working directory)
 		- pwd
-	
+ * 디렉토리 조작
+	+ 디렉토리 생성 mkdir ( make directory )
+	+ 디렉토리 삭제 rmdir ( remove directory ) - 빈 디렉토리
+	+ 내용 rm -r ( r 옵션으로 내용까지 모두 삭제 )
+
  *  권한 확인
 	+ ls -l
 	
