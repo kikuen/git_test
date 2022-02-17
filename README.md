@@ -7,6 +7,8 @@
 
  * Git Bash란 컴퓨터 OS와 상관없이 리눅스 베이스 터미널용 Git을 말한다.
  
+ <br>
+  
  ### https://git-scm.com/downloads 에서 다운로드 및 설치
  
  ### 특정 위치에서 git terminal 호출 
@@ -28,11 +30,15 @@
 		- cd ./test_git
 	+ 현재 작업중인 디렉토리 pwd :  (print working directory)
 		- pwd
+
  * 디렉토리 조작
 	+ 디렉토리 생성 mkdir ( make directory )
+		- $ mkdir test
 	+ 디렉토리 삭제 rmdir ( remove directory ) - 빈 디렉토리
-	+ 내용 rm -r ( r 옵션으로 내용까지 모두 삭제 )
-
+		- $ rmdir test
+	+ 디렉토리에 파일이 존재할 경우 내용까지 삭제 rm -r ( r 옵션으로 내용까지 모두 삭제 )
+		- $ rm -r test
+		
  *  권한 확인
 	+ ls -l
 	
