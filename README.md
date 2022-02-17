@@ -17,6 +17,11 @@
  
  * 저장 할려는 위치에서 git-bash 호출 하거나 cd 명령어로 이동 또는 마우스 우클릭 Git Bash Here
 
+<br>
+
+<img src="https://kikuen.github.io/pana/img/bash.png" width="400"/>
+
+<br>
 
  ### Git Bash에서 사용되는 Linux-base 기본 명령어 
  
