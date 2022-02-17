@@ -3,9 +3,19 @@
 
  # git_bash 사용
 
+ ### git bash 란
+
+ * Git Bash란 컴퓨터 OS와 상관없이 리눅스 베이스 터미널용 Git을 말한다.
+
+
  https://git-scm.com/downloads 에서 다운로드 및 설치
  
- ### 저장 할려는 위치에서 git-bash 호출 하거나 cd 명령어로 이동 또는 마우스 우클릭 Git Bash Here
+ ### 특정 위치에서 git terminal 호출 
+ 
+ * 저장 할려는 위치에서 git-bash 호출 하거나 cd 명령어로 이동 또는 마우스 우클릭 Git Bash Here
+
+
+ ### 명령 실행을 위한 준비
  
  * git_hub Page 에서 등록 한 repositories 이름 등록
 	+ $ git config --global user.name "test_git"
