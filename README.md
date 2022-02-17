@@ -1,6 +1,8 @@
  # test_git
  테스트 기록
 
+----------------------------------------------------------------------------------------------------------------
+
  # git_bash 사용
 
  ### git bash 란
@@ -18,26 +20,22 @@
 
  ### Git Bash에서 사용되는 Linux-base 기본 명령어 
  
+ * 기본 명령어 설명
+ 	+ 명령어 --help
+ 		- $ ls --help
+ 
  * 파일 브라우징
 	+ 파일 목록 ls :  (list) -l(자세히) -a(숨김파일까지)
-	 	- ls
-	 	- ls -l
-	 	- ls -a
-	 	- ls -l -a
+	 	- $ ls
+	 	- $ ls -l
+	 	- $ ls -a
+	 	- $ ls -l -a
 	+ 디렉토리(폴더) 이동 cd :  (change directory)
-		- cd ../
-		- cd test_git
-		- cd ./test_git
+		- $ cd ../
+		- $ cd test_git
+		- $ cd ./test_git
 	+ 현재 작업중인 디렉토리 pwd :  (print working directory)
-		- pwd
-
- * 디렉토리 조작
-	+ 디렉토리 생성 mkdir ( make directory )
-		- $ mkdir test
-	+ 디렉토리 삭제 rmdir ( remove directory ) - 빈 디렉토리
-		- $ rmdir test
-	+ 디렉토리에 파일이 존재할 경우 내용까지 삭제 rm -r ( r 옵션으로 내용까지 모두 삭제 )
-		- $ rm -r test
+		- $ pwd
 		
  *  권한 확인
 	+ ls -l
@@ -54,7 +52,7 @@
 		- 숫자로 권한 표시 r: 4, w: 2, x: 1
 		- ex) 644 권한
 		- ex) 최고권한 = 777
-
+		
  * 파일 조작
 	+ 파일 생성 touch 
 		- $ touch test.txt
@@ -70,11 +68,22 @@
 		- $ rm copy.txt
 		- $ ls -l
 
+
+ * 디렉토리 조작
+	+ 디렉토리 생성 mkdir ( make directory )
+		- $ mkdir test
+	+ 디렉토리 삭제 rmdir ( remove directory ) - 빈 디렉토리
+		- $ rmdir test
+	+ 디렉토리에 파일이 존재할 경우 내용까지 삭제 rm -r ( r 옵션으로 내용까지 모두 삭제 )
+		- $ rm -r test
+
 * 파일 내용 조회
 	+ 전체 내용 출력 cat ( 터미널 창으로 출력 )
+		- $ cat test.txt
 	+ 파일의 앞부분 head ( 기본 10줄 )
+		- $ head test.txt
 	+ 파일의 뒷부분 tail
-	+ 페이지 단위로 출력 more, less
+		- $ tail test.txt
 	
  * 파일 편집기
 	+ 파일 편집 호출 **vi** **파일이름**
@@ -92,10 +101,6 @@
 		- 붙여넣기 : p
 		
 -----------------------------------------------------------------------------------------
-
-## 기본 명령어 실습
-	+ $ 
-
 
  ### git 원격 명령 실행을 위한 준비
  
