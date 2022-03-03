@@ -178,7 +178,31 @@
  * 파일 정보 직접 변경 후 반복
 
 
+## 버전관리하기
 
+ * sample 파일 생성
+	+ $ touch sample.txt
+	+ $ ls -l
+
+ * sample 파일 수정
+	+ $ vim sample.txt
+	임의의 값 작성 후
+	+ :wq
+ * git 상태 정보 확인
+	+ $ git status
+	Untracked files:
+	  (use "git add <file>..." to include in what will be committed) sample.txt
+ * 작업 트리에서 수정한 파일(sample.txt)을 스테이지에 추가
+	+ $ git add sample.txt
+	+ $ git status
+
+ * 버전을 만드는 것을 ‘커밋한다’라고 함
+ * 버전에 어떤 변경이 있었는지 메시지를 함께 기록해 둠. -m
+	+ $ git commit -m "ADD sample.txt"
+
+ * 저장소에 있는 버전(커밋)을 확인
+ * 커밋을 만든 사람, 만든 시간, 커밋 메시지 등이 나타남
+	+ $ git log
 
 
 
