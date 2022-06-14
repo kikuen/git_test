@@ -34,8 +34,13 @@
 	+ 파일 목록 ls :  (list) -l(자세히) -a(숨김파일까지)
 	 	- $ ls
 	 	- $ ls -l
+	 	- $ ll
 	 	- $ ls -a
 	 	- $ ls -l -a
+	 	- $ ls -al  	  ls -l 와 동일       
+	 	- $ ls -alS       시간순 정렬
+	 	- $ ls -alh       용량을 보기 좋게 표현 하고 정렬
+	 	- $ ls -alt       시간 순 정렬
 	+ 디렉토리(폴더) 이동 cd :  (change directory)
 		- $ cd ../
 		- $ cd test_git
@@ -46,7 +51,7 @@
  *  권한 확인
 	+ ls -l
 	
-	+ -|rw-|r--|r-- root(소유자) root(소유그룹) test(파일이름)
+	+ -|rw-|r--|r-- 링크수 root(소유자) root(소유그룹) 파일크기 마지막수정변경날짜/시간 test(파일이름)
 	+ 1 234 567 890
 	
 		- 1 - 파일의 형식 ( l: link, d: directory, - : file ) 
