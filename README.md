@@ -153,6 +153,68 @@
  <br/> git push [원격저장소 이름][원격저장소 브런치 이름]
  	+ git push origin master
 
+ * 최신 커밋 되돌리기
+	+ $ git commit -a -m "최신 커밋 되돌리기"
+	+ 커밋 버전 확인
+	+ $ git log 
+	+ $ git reset HEAD^
+	+ 가장 마지막에 했던 커밋을 되돌리려고 할 때
+	+ 커밋 취소와 함께 스테이지에서도 내려짐
+	+ 사라진 버전 로그 확인
+	+ $ git log
+
+
+ * 작업 트리에서 수정한 파일 되돌리기
+	+ github 사이트 history 또는 $git log 를 통해 버전 해쉬 코드 획득한 후 작성
+
+	+ $ git reset --hard 버전해쉬코드
+	+ 특정 버전 상태로 되돌리려고 할 때
+	+ git log를 사용해 커밋 해시 확인한 후
+	+ 해당 커밋 해시를 가진 커밋으로 리셋 & 이후 커밋은 삭제됨
+
+ * 작업 트리에서 수정한 파일 되돌리기
+	+ $ git revert  커밋해시
+	+ 특정 버전 상태로 되돌리려고 할 때
+	+ $ git log를 사용해 커밋 해시 확인한 후
+	+ 해당 커밋 해시의 직전 커밋으로 돌아감 & 이후 커밋 그대로 유지
+
+
+## 브런치
+ * main 브랜치 : 깃에서 자동으로 만드는 기본 브랜치
+ * 분기(branch) : main 브랜치에서 새 브랜치 만듦
+ * 병합(merge) : 새 브랜치에 있던 파일을 main 브랜치에 합침
+
+
+ * 저장소의 브랜치 확인 
+	+ $ git branch
+
+ * apple이라는 새 브랜치 만듦
+	+ $ git branch apple
+
+ * 변경 정보 확인
+	+ $ git log
+
+ * apple 브랜치로 이동 (apple 브랜치로 체크아웃한다고 함)
+	+ $ git checkout apple
+	+ main branch 커밋 내용들이 apple로 복사됨 
+
+ * git log 명령어를 활용하여 내용 확인
+	+ $ git log --online
+
+
+ * main 에는 없고 apple에만 있는 버전을 확인
+	+ $ git log main..apple
+
+
+ * main 브런치로 변경 후 apple 에서 변경한 내용을 main 브런치에 병합
+	+ $ git checkout main
+	+ $ git merge apple
+
+	+ log로 확인 main과 apple이 같은 commit을 가르킴
+	+ $ git log --oneline 
+
+
+
 
  * branch-분점 - 나뉘다
  	+ 로컬 저장소의 변경사항을 원격 저장소(origin)의 브런치(master)에 반영
