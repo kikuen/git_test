@@ -20,7 +20,7 @@
 <br>
 
 
-![](https://kikuen.github.io/pana/img/bash.png)
+![](https://kikuen.github.io/img/bash.png)
 
 <br>
 
