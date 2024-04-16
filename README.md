@@ -45,6 +45,10 @@
 		- $ cd ../
 		- $ cd test_git
 		- $ cd ./test_git
+  		- $ cd ~ 는 home directory다.
+		- $ cd /는 root directory다.
+  		- 	/ 시스템의 가장 최상위의 디렉토리
+    		- 	~ 시스템의 하위 /user/username 디렉토리 
 	+ 현재 작업중인 디렉토리 pwd :  (print working directory)
 		- $ pwd
 		
