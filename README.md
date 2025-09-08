@@ -363,4 +363,24 @@
 	+ log로 확인 main과 apple이 같은 commit을 가르킴
 	+ $ git log --oneline 
 
+---
+
+# .gitignore 추가 시 
+적용된 파일이 계속 문제가 일어 난다고 하면 
+
+cached 제거 후 새롭게 적용해야함.
+
+```bash
+	git rm -r --cached .
+	git add .
+```
+
+
+
+
+
+
+
+
+
 
